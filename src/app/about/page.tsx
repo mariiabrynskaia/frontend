@@ -4,7 +4,7 @@ export default function About() {
     return (
         <>
             <div>
-                Back to <Link href="/">Home</Link>
+                No information on shipping and payment yet. <Link href="/">Back to home page.</Link>
             </div>
         </>
     );

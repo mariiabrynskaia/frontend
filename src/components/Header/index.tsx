@@ -28,11 +28,11 @@ function Header() {
                         <div className={styles.cartIconBadge}>0</div>
                     </div>
                 </div>
-                <a href="tel:+79184326587" className={styles.phone}>
+                <div className={styles.phone}>
                     <div className={styles.phoneWrap}>
                         <div className={styles.phoneText}>+1 (888) 888-88-88</div>
                     </div>
-                </a>
+                </div>
 
             </div>
         </header>

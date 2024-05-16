@@ -8,6 +8,8 @@
 
         &Item {
             margin: 0 24px;
+            display: flex;
+            align-items: center;
 
             &>a {
                 color: $white-color;

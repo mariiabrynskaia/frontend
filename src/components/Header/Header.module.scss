@@ -5,7 +5,7 @@
 .header {
     position: sticky;
     z-index: 10;
-    top: -1px;
+    top: 1px;
     margin: 1px 0 80px 0;
     height: 48px;
     background: $grey-primary-color;
@@ -24,9 +24,14 @@
 
     &WrapImage {
         position: relative;
+        right: -40px;
         width: 24px;
         height: 24px;
-        transition: $transition;
+        transition: fill $transition;
+
+        &:hover {
+            fill: $hover-color;
+        }
     }
 
     &Icon {
@@ -36,7 +41,7 @@
         &Badge {
             position: absolute;
             top: -1px;
-            right: -5px;
+            right: -45px;
             width: 11px;
             height: 11px;
             border-radius: 50%;
@@ -64,16 +69,10 @@
             letter-spacing: 1px;
             line-height: normal;
             text-transform: uppercase;
-            transition: $transition;
-
-            &:hover {
-                color: $hover-color;
-            }
         }
 
         &Count {
             @include desc-text;
-            // width: 160px;
             height: 18px;
         }
     }
@@ -86,10 +85,11 @@
 
     &WrapImage {
         position: relative;
+        right: 20px;
         width: 22px;
         height: 22px;
         margin-right: 16px;
-        transition: $transition;
+        transition: fill $transition;
     }
 
     &Wrap {
@@ -99,11 +99,32 @@
 
     &:hover {
         .WrapImage {
-            color: $hover-color;
+            fill: $hover-color;
         }
     }
 
     &Time {
         @include desc-text;
+    }
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $white-color;
+    font-family: $font-proxima-nova-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: color $transition;
+    position: relative;
+    left: -90px;
+
+    &:hover {
+        color: $hover-color;
     }
 }
