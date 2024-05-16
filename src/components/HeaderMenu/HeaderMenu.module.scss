@@ -1,0 +1,30 @@
+@import 'variables';
+
+.nav {
+    overflow: auto;
+
+    &List {
+        display: flex;
+
+        &Item {
+            margin: 0 24px;
+
+            &>a {
+                color: $white-color;
+                font-family: $font-proxima-nova-light;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 100;
+                letter-spacing: 1px;
+                line-height: normal;
+                text-transform: uppercase;
+                transition: $transition;
+
+                &:hover {
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+    
+}

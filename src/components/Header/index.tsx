@@ -1,0 +1,42 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import HeaderMenu from '../HeaderMenu';
+import styles from './Header.module.scss';
+
+function Header() {
+
+    return (
+        <header className={styles.header}>
+            <div className={`container ${styles.wrapper}`}>                
+                <HeaderMenu />
+                <div className={styles.cart}>
+                    <div className={styles.cartIcon}>
+                        <div className={styles.cartWrapImage}>
+                            <Image fill src="/assets/icons/cart.svg" alt="logo" />
+                        </div>
+                        <div className={styles.cartIconBadge}>0</div>
+                    </div>
+                </div>
+                <div className={styles.media}>
+                    <div className={styles.mediaIcon}>
+                        <div className={styles.mediaWrapImage}>
+                            <Image fill src="/assets/icons/media.svg" alt="logo" />
+                        </div>
+                        <div className={styles.cartIconBadge}>0</div>
+                    </div>
+                </div>
+                <a href="tel:+79184326587" className={styles.phone}>
+                    <div className={styles.phoneWrap}>
+                        <div className={styles.phoneText}>+1 (888) 888-88-88</div>
+                    </div>
+                </a>
+
+            </div>
+        </header>
+    );
+}
+
+export default Header;

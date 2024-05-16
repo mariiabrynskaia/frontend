@@ -1,0 +1,30 @@
+'use client';
+
+import Link from 'next/link';
+
+import styles from './HeaderMenu.module.scss';
+
+export default function HeaderMenu() {
+    return (
+        <nav className={styles.nav}>
+
+            <div className={styles.navList}>
+                <div className={styles.navListItem}>
+                    <Link href="#">reviews</Link>
+                </div>
+                <div className={styles.navListItem}>
+                    <Link href="/about">shipping and payment</Link>
+                </div>
+                <div className={styles.navListItem}>
+                    <Link href="#">wholesale</Link>
+                </div>
+                <div className={styles.navListItem}>
+                    <Link href="#">blog</Link>
+                </div>
+                <div className={styles.navListItem}>
+                    <Link href="#">contacts</Link>
+                </div>
+            </div>
+        </nav>
+    );
+}
