@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+.imageStack {
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+}
+
+.upperImage,
+.lowerImage {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lowerImage {
+  z-index: 2; /* Place lower image on top */
+  margin-top: -10px; /* Adjust the overlap amount as needed */
+}

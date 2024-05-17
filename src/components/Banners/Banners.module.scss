@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.photo {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    margin-bottom: 1px;
+}

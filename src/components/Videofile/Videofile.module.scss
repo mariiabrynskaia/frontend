@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.background {
+    background-image: url('/C:/frontend/public/assets/icons/background_gradient.svg');
+    background-size: cover;
+    width: 100vw;
+    height: 550px;
+  }
+  

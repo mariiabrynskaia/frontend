@@ -13,7 +13,7 @@
     transition: color $transition;
 
     &:hover {
-        box-shadow: $box-shadow-hover;
+        // box-shadow: $box-shadow-hover;
         background: $blue-primary-color;
         .cardName {
             color: $white-color;

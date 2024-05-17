@@ -12,22 +12,19 @@
 
 
 @mixin h2-title {
-  color: $black-color;
-  font-size: 52px;
-  font-family: $font-alegreya;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 65px;
-  letter-spacing: 1px;
+  color: $grey-primary-color;
+  font-size: 50px;
+  font-family: $font-proxima-nova-semibold
 }
 
+/* for videofile title */
 @mixin h3-title {
-  color: $black-color;
-  font-size: 32px;
-  font-family: $font-alegreya;
+  color: $grey-primary-color;
+  font-size: 50px;
+  font-family: $font-proxima-nova-semibold;
   font-style: normal;
-  font-weight: 800;
-  line-height: 40px;
+  font-weight: 700;
+  line-height: 60px;
 }
 
 @mixin h4-title {

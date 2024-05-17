@@ -1,0 +1,111 @@
+@import 'variables';
+@import 'mixins';
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    height: 375px;
+
+    &:hover {
+        box-shadow: $box-shadow-hover;
+
+        // .cardDescName {
+        //     color: $blue-primary-color;
+        // }
+    }
+
+    &Image {
+        position: relative;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        aspect-ratio: 1 / 1;
+
+          /* Circle */
+        background-color: $grey-circle-color;
+        border-radius: 50%;
+        width: 130px;
+        height: 130px;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
+
+    &Desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &Name {
+            color: $grey-primary-color;
+            font-family: $font-proxima-nova-semibold;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 100;
+            letter-spacing: 1px;
+            line-height: normal;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 13px;
+            transition: color $transition;
+        }
+
+        &Text {
+            @include desc-text;
+            margin-bottom: 13px;
+            color: $grey-secondary-color;
+            font-family: $font-proxima-nova-light;
+            text-align: center;
+        }
+
+        &Price {
+            margin-bottom: 12px;
+            color: $grey-primary-color;
+            font-family: $font-proxima-nova-regular;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        &BuyBtn {
+            position: relative;
+            z-index: 1;
+            width: 130px;
+            height: 42px;
+            padding: 14px 0;
+            border: none;
+            border-radius: 5px;
+            background: $white-color;
+            color: $grey-secondary-color;
+            cursor: pointer;
+            border: 1px solid $grey-secondary-color;
+            font-family: $font-proxima-nova-light;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 1px;
+            line-height: normal;
+            outline: none;
+            text-transform: uppercase;
+            transition: $transition;
+            
+            &:hover {
+                background: $hover-color;
+                color: $white-color;
+            }
+        }
+
+    }
+}
