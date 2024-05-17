@@ -29,7 +29,8 @@
 .phone {
     display: flex;
     flex-direction: column;
-    margin-right: 44px;
+    margin-left: 100px;
+    margin-right: -120px;
 
     &>a {
         color: $white-color;
@@ -54,7 +55,7 @@
     font-weight: 100;
     letter-spacing: 1px;
     line-height: normal;
-    margin-right: 44px;
+    margin-right: -120px;
 
     &:hover {
         color: $hover-color;

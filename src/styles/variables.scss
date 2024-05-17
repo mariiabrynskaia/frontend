@@ -5,11 +5,22 @@
 @font-face {
     font-family: 'proxima-nova-light';
     src: url('/assets/fonts/ProximaNovaLight.otf') format('opentype');}
+
+@font-face {
+    font-family: 'proxima-nova-regular';
+    src: url('/assets/fonts/ProximaNovaRegular.otf') format('opentype');}
+
+@font-face {
+    font-family: 'proxima-nova-semibold';
+    src: url('/assets/fonts/ProximaNovaSemibold.otf') format('opentype');}
+    
 // Fonts
 $font-alegreya: var(--font-alegreya);
 $font-roboto: var(--font-roboto);
 $font-proxima-nova: 'proxima-nova';
 $font-proxima-nova-light: 'proxima-nova-light';
+$font-proxima-nova-regular: 'proxima-nova-regular';
+$font-proxima-nova-semibold: 'proxima-nova-semibold';
 
 // Colors
 $grey-primary-color: #323941;

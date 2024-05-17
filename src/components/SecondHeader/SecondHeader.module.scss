@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'mixins';
+
+.secondheader {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0 90px;
+    background: $white-color;
+    margin-top: 1px;
+    height: 90px;
+    text-align: center;
+}
+
+.wrapper {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.logo {
+position: relative;
+width: 174px;
+height: 50px;
+margin-left: 60px;
+margin-right: 100px;
+}
+
+.director {
+position: relative;
+width: 64px;
+height: 64px;
+margin-left: 620px;
+margin-right: 10px;
+border-radius: 50%;
+overflow: hidden;
+border: 1px solid $grey-primary-color;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.director img {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: none; 
+    max-height: none;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+
+    &Wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Name {
+        color: $grey-primary-color;
+        font-family: $font-proxima-nova-light;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: normal;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &Contact {
+        color: $blue-primary-color;
+        font-family: $font-proxima-nova-light;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: normal;
+        text-transform: lowercase;
+        text-decoration: underline;
+        text-align: left;
+        transition: $transition;
+
+        &:hover {
+            color: $gradient-blue-color;
+        }
+    }
+
+    &Time {
+        @include desc-text;
+    }
+}

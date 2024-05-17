@@ -13,7 +13,7 @@ export default function HeaderMenu() {
                     <Link href="#">reviews</Link>
                 </div>
                 <div className={styles.navListItem}>
-                    <Link href="/about">shipping and payment</Link>
+                    <Link href="/payment">shipping and payment</Link>
                 </div>
                 <div className={styles.navListItem}>
                     <Link href="#">wholesale</Link>

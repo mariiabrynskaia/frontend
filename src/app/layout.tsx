@@ -8,6 +8,8 @@ import type { Metadata } from "next";
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ReactQueryProvider from '@/providers/react-query';
+import SecondHeader from '@/components/SecondHeader';
+import Catalog from '@/components/Catalog';
 
 const alegreya = Alegreya({
     subsets: ['cyrillic'],

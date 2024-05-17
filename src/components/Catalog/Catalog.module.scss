@@ -2,51 +2,16 @@
 @import 'mixins';
 
 .catalog {
-    &Title {
-        @include h2-title;
-
-        margin-bottom: 55px;
-        text-align: center;
-    }
-
-    &Category {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-
-        &Item {
-            position: relative;
-            margin: 0 20px;
-            cursor: pointer;
-
-            color: $black-color;
-            font-family: $font-alegreya;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 900;
-            letter-spacing: 1px;
-            line-height: normal;
-            text-transform: uppercase;
-            transition: $transition;
-
-            &:hover {
-                color: $hover-color;
-            }
-
-
-
-
-        }
-    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: $box-shadow;
+    background-color: $grey-primary-color;
 
     &Grid {
         display: grid;
-        margin-bottom: 100px;
-        gap: 32px 32px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(7, 0fr);
+        color: $grey-primary-color;
+        justify-content: center;
     }
-}
-
-.active {
-    color: $hover-color;
 }
