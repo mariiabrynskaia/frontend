@@ -6,6 +6,15 @@ import Banners from "@/components/Banners";
 import Accessory from "@/components/Accessory";
 
 export default function Home() {
+  // for test
+  const accessoryData = {
+    id: 1,
+    name: "Accessory Name",
+    description: "Accessory Description",
+    price: 29.99,
+    image: "backpack.png",
+  };
+
   return (
     <div>
       <div>
