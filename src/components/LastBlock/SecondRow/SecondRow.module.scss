@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixins';
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    // padding: 0 24px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navText {
+    color: $grey-primary-color;
+    font-family: $font-proxima-nova-regular;
+    text-align: left;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.navListPicture {
+    margin-right: 30px;
+}
+
+.navListGift {
+    margin-right: 64px;
+    margin-left: 30px;
+}

@@ -1,0 +1,9 @@
+@import 'variables';
+@import 'mixins';
+
+.Text {
+    color: $blue-primary-color;
+    font-family: $font-proxima-nova-semibold;
+    text-align: left;
+    font-size: 18px;
+}

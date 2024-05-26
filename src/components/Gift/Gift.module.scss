@@ -1,0 +1,46 @@
+@import 'variables';
+
+.Title {
+    font-family: 'proxima-nova-semibold';
+    font-size: 50px;
+    color: $grey-primary-color;
+    text-align: left;
+    text-transform: uppercase; 
+    font-weight: bold; 
+}
+
+.Text {
+    font-family: 'proxima-nova-light';
+    font-size: 18px;
+    color: $grey-primary-color;
+    text-align: left;
+}
+
+.TextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; // Align items to the left
+    margin: 10px 0;
+
+    .Title {
+        margin-bottom: 10px; // Add margin between title and text
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    border: 5px solid $blue-primary-color;
+    padding: 40px;
+    width: 962px;
+    height: 246px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    
+    .image {
+        width: 278px;
+        height: 200px;
+        margin-right: 20px; // Add some space between image and TextContainer
+    }
+}

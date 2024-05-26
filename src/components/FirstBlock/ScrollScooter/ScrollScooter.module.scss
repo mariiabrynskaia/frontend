@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+    position: relative;
+    width: 450px;;
+    height: 750px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 70px;
+}
+
+.slide {
+    flex: 0 0 432px;
+    width: 432px;
+    height: 650px;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.indicator {
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 15px;
+    background-color: $grey-secondary-color;
+}
+
+.active {
+    background-color: $blue-primary-color;
+}

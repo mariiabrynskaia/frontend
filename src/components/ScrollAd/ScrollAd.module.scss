@@ -1,0 +1,63 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.indicatorContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.indicator {
+  width: 239.5px;
+  height: 64px;
+  background-color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.indicator:hover {
+  background-color: $blue-primary-color;
+}
+
+.indicatorText {
+  font-family: $font-proxima-nova-light;
+  color: $grey-secondary-color;
+  font-size: 18px;
+}
+
+.active {
+  background-color: $blue-primary-color;
+
+  .indicatorText {
+    color: $white-color;
+  }
+}
+
+.slideContainer {
+  display: flex;
+  justify-content: center;
+  width: 1052px;
+  background-color: $white-color;
+}
+
+.slide {
+  display: none;
+  background-color: $grey-for-ad-cards;
+}
+
+.slide.active {
+  display: block;
+}
+
+

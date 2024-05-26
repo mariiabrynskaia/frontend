@@ -1,0 +1,17 @@
+/* DownloadManual.module.scss */
+
+@import 'variables';
+
+.container {
+    width: 100%;
+    height: 500px; /* Set container height to 500px */
+    background-color: $grey-gradient;
+    margin-right: 20px;
+}
+
+.photo {
+    position: relative;
+    width: 960px; /* Set photo width to 960px */
+    height: 318px; /* Set photo height to 318px */
+    margin: 0 auto; /* Center the photo horizontally */
+}

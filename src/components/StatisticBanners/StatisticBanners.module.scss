@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+
+.fullcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // margin-top: 42px;
+    // margin-bottom: 38px;
+}

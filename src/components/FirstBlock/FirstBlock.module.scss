@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mixins';
+
+.fullcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 38px;
+}
+
+.innerContainer {
+    width: 542px;
+    height: 278px;
+    border: 1px solid $grey-secondary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+.Text {
+    font-family: $font-proxima-nova-light;
+    font-size: 18px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+    text-align: left;
+}
+
+.instock {
+    width: 90px;
+    height: 28px;
+    background-color: $white-color;
+    border: 3px solid $green-secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green-secondary-color;
+}
+
+.paymentImage {
+    width: 494px;
+    height: 46px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.titleText {
+    font-family: $font-proxima-nova-semibold;
+    color: $grey-primary-color;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: left;
+}
+

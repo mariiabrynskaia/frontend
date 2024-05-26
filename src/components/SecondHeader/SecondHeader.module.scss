@@ -8,7 +8,6 @@
     width: 100%;
     padding: 30px 0 90px;
     background: $white-color;
-    margin-top: 1px;
     height: 90px;
     text-align: center;
 }
@@ -21,24 +20,23 @@ justify-content: flex-start;
 
 .logo {
 position: relative;
-width: 174px;
-height: 50px;
-margin-left: 25px;
-margin-right: 150px;
+width: 216px;
+height: 62px;
+margin-left: 160px;
+margin-right: 564px;
 }
 
 .director {
 position: relative;
 width: 64px;
 height: 64px;
-margin-left: 620px;
-margin-right: 10px;
 border-radius: 50%;
 overflow: hidden;
 border: 1px solid $grey-primary-color;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-right: 14px;
 }
 
 .director img {
@@ -55,6 +53,7 @@ justify-content: center;
 .description {
     display: flex;
     align-items: center;
+    margin-left: 14px;
 
     &Wrap {
         display: flex;

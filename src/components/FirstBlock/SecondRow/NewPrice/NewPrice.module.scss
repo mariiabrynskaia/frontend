@@ -1,0 +1,18 @@
+@import 'variables';
+@import 'mixins';
+  
+.TextCrossed {
+    color: $grey-primary-color;
+    font-family: $font-proxima-nova-regular;
+    text-align: left;
+    text-decoration: line-through;
+    font-size: 18px;
+
+}
+
+.Text {
+    color: $grey-primary-color;
+    font-family: $font-proxima-nova-semibold;
+    text-align: left;
+    font-size: 35px;
+}

@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  width: 100%;
+  height: 555px;
+  background: linear-gradient(to top, $grey-gradient, $white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}

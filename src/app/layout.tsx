@@ -25,8 +25,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "Интернет Магазин",
-    description: "Проект 1",
+    title: "Интернет Магазин Самокатов",
+    description: "Проект",
 };
 
 export default function RootLayout({
