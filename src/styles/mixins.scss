@@ -14,16 +14,16 @@
 @mixin h2-title {
   color: $grey-primary-color;
   font-size: 50px;
-  font-family: $font-proxima-nova-semibold
+  font-family: $font-proxima-nova-semibold;
+  margin-top: 64px;
 }
 
-/* for videofile title */
 @mixin h3-title {
   color: $grey-primary-color;
-  font-size: 50px;
-  font-family: $font-proxima-nova-semibold;
+  font-size: 18px;
+  font-family: $font-proxima-nova-light;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 60px;
 }
 

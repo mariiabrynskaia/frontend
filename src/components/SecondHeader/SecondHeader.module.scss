@@ -32,7 +32,7 @@ width: 64px;
 height: 64px;
 border-radius: 50%;
 overflow: hidden;
-border: 1px solid $grey-primary-color;
+border: 3px solid $grey-primary-color;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -48,6 +48,7 @@ margin-right: 14px;
     height: auto;
     max-width: none; 
     max-height: none;
+    filter: brightness(170%);
 }
 
 .description {
@@ -62,7 +63,7 @@ margin-right: 14px;
 
     &Name {
         color: $grey-primary-color;
-        font-family: $font-proxima-nova-light;
+        font-family: $font-proxima-nova-semibold;
         font-size: 13px;
         font-style: normal;
         font-weight: 400;

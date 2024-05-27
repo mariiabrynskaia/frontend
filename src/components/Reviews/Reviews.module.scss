@@ -1,14 +1,12 @@
 @import 'variables';
 @import 'mixins';
 
-/* Reviews.module.scss */
-
 .review-text {
     font-family: $font-proxima-nova-semibold;
     font-size: 50px;
     color: $grey-primary-color;
-    text-transform: uppercase; /* Convert text to uppercase */
-    margin-bottom: 38px; /* Space between text and slider */
+    text-transform: uppercase;
+    margin-bottom: 38px;
 }
 
 .container {
@@ -16,23 +14,31 @@
     height: 750px;
     background-color: $grey-gradient;
     display: flex;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .Text {
-    @extend .review-text; /* Extend the review-text class */
+    @extend .review-text;
     text-align: center;
 }
 
 .slider-container {
     display: flex;
     align-items: center;
+    overflow: hidden;
+    width: 880px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
 }
 
 .slide {
-    margin: 0 9px; /* Gap between slides */
+    margin: 0 9px;
+    flex-shrink: 0;
 }
 
 .swipe {
@@ -44,6 +50,27 @@
     width: 275px;
     height: 487px;
 }
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $grey-secondary-color;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: $blue-primary-color;
+}
+
 
 
 

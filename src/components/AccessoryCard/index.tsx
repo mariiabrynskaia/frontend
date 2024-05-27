@@ -27,7 +27,7 @@ const AccessoryCard = ({ id }: AccessoryCardProps) => {
         const response = await fetch(`http://127.0.0.1:2602/api/accessory/${id}`);
         if (response.ok) {
           const data: Accessory = await response.json();
-          console.log('Fetched Accessory Data:', data); // Check fetched data
+          console.log('Fetched Accessory Data:', data);
           setAccessory(data);
         } else {
           const errorText = await response.text();
@@ -62,7 +62,7 @@ const AccessoryCard = ({ id }: AccessoryCardProps) => {
       <div className={styles.circle}></div>
       <div className={styles.cardImage}>
         <Image
-          src={`/api/accessory/image/${accessory.image}`}
+          src={`/assets/images/accessory_pic/${accessory.image}`}
           alt={accessory.name}
           width={99}
           height={144}

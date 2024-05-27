@@ -18,6 +18,9 @@ import Gift from "@/components/Gift";
 import Reviews from "@/components/Reviews";
 import Control from "@/components/Control";
 import LastBlock from "@/components/LastBlock";
+import ScooterCatalog from "@/components/ScooterCatalog";
+import ComparisonCardOne from "@/components/Comparison/ComparisonCardOne";
+import Comparison from "@/components/Comparison";
 
 export default function Home() {
   // for test
@@ -38,9 +41,6 @@ export default function Home() {
         <Catalog />
       </div>
       <div>
-        <Catalog />
-      </div>
-      <div>
         <LongAd />
       </div>
       <div>
@@ -52,17 +52,20 @@ export default function Home() {
       <div>
         <Package />
       </div>
-      {/* <div>
+      <div>
         <Accessory />
       </div>
       <div>
         <StatisticBanners />
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <Banners />
-      </div> */}
+      </div>
       <div>
         <DownloadManual />
+      </div>
+      <div>
+        <Comparison />
       </div>
       <div>
         <Gift />
@@ -75,6 +78,9 @@ export default function Home() {
       </div>
       <div>
         <LastBlock />
+      </div>
+      <div>
+        <ScooterCatalog />
       </div>
     </div>
   );

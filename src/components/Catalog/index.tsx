@@ -1,27 +1,27 @@
-'use client';
-
-import Image from 'next/image';
-import { useState } from 'react';
-import clsx from 'clsx';
-
 import CatalogCard from '../CatalogCard';
 import styles from './Catalog.module.scss';
-import { useCategoriesQuery } from '@/hooks/useCategoriesQuery';
 
-export default function Catalog() {
-    return (
-        <div className="catalog">
-            <section className={styles.catalog}>
-                <div className={styles.catalogGrid}>
-                    <CatalogCard />
-                    <CatalogCard />
-                    <CatalogCard />
-                    <CatalogCard />
-                    <CatalogCard />
-                    <CatalogCard />
-                    <CatalogCard />
-                </div>
-            </section>
+const Catalog = () => {
+  const productIds = [1, 2, 3, 4, 5, 6, 7];
+  const productIds2 = [8, 9, 10, 11, 12, 13, 14];
+
+  return (
+    <div className="catalog">
+      <section className={styles.catalog}>
+        <div className={styles.catalogGrid}>
+          {productIds.map(id => (
+            <CatalogCard key={id} id={id} />
+          ))}
         </div>
-    );
-}
+        <div className={styles.separator}></div>
+        <div className={styles.catalogGrid}>
+          {productIds2.map(id => (
+            <CatalogCard key={id} id={id} />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Catalog;

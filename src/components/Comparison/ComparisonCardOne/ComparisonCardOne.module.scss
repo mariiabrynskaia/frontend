@@ -1,0 +1,138 @@
+@import 'variables';
+@import 'mixins';
+
+.Picture {
+    height: 182px;
+    width: 168px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Name {
+    font-family: $font-proxima-nova-semibold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.categoryName {
+    font-family: $font-proxima-nova-light;
+    font-size: 20px;
+    color: $blue-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+}
+
+.cactegoryIcon {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 3px;
+}
+
+.categoryDesc {
+    font-family: $font-proxima-nova-light;
+    font-size: 20px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+}
+
+.Price {
+    font-family: $font-proxima-nova-semibold;
+    font-size: 25px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.Button {
+    position: relative;
+    z-index: 1;
+    width: 188px;
+    height: 46px;
+    padding: 14px 0;
+    border: none;
+    background: $blue-primary-color;
+    color: $white-color;
+    cursor: pointer;
+    font-family: $font-proxima-nova-light;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: normal;
+    outline: none;
+    text-transform: uppercase;
+    transition: $transition;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    &:hover {
+        background: $gradient-blue-color;
+    }
+}
+
+.TextImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+.line {
+    width: 200px;
+    height: 1px;
+    background-color: $grey-secondary-color;
+}
+
+.containerFullCategory {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    gap: 8px;
+}
+
+.allignAll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.PriceButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    margin-bottom: 55px;;
+}

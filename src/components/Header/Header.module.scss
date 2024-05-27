@@ -98,8 +98,8 @@
     }
 
     &:hover {
-        .WrapImage {
-            fill: $hover-color;
+        .mediaWrapImage {
+            fill: $blue-primary-color;
         }
     }
 
@@ -110,7 +110,6 @@
 
 .phone {
     display: flex;
-    // align-items: center;
     cursor: pointer;
     color: $white-color;
     font-family: $font-proxima-nova-light;

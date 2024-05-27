@@ -6,6 +6,7 @@ import SecondRow from './SecondRow';
 import Buttons from './Buttons';
 import ScrollScooter from './ScrollScooter';
 import styles from './FirstBlock.module.scss';
+import Link from 'next/link';
 
 export default function FirstBlock() {
     return (
@@ -34,12 +35,12 @@ export default function FirstBlock() {
                     </div>
                 </div>
                 <div className={styles.paymentImage}>
-                    <Image src="/assets/images/payment_methods.png" alt="Payment Methods" width={494} height={46} />
+                    <Link href="/payment">
+                        <Image src="/assets/images/payment_methods.png" alt="Payment Methods" width={494} height={46} className={styles.pointer} />
+                    </Link>
                 </div>
             </div>
-            <ScrollScooter />
+            <ScrollScooter />;
         </div>
     );
 }
-
-

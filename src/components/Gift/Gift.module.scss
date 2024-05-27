@@ -19,11 +19,11 @@
 .TextContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; // Align items to the left
+    align-items: flex-start;
     margin: 10px 0;
 
     .Title {
-        margin-bottom: 10px; // Add margin between title and text
+        margin-bottom: 10px;
     }
 }
 
@@ -41,6 +41,6 @@
     .image {
         width: 278px;
         height: 200px;
-        margin-right: 20px; // Add some space between image and TextContainer
+        margin-right: 20px;
     }
 }

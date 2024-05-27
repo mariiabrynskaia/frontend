@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'mixins';
+
+.ComparisonContainer {
+  position: relative;
+  overflow: hidden;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.CardContainer {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 60px;
+}
+
+.ComparisonCard {
+  flex: 0 0 calc((100% / 4));
+  margin-right: 60px;
+  margin-bottom: 25px;
+}
+
+.CircleIndicatorContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.CircleIndicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $grey-secondary-color;
+  transition: background-color 0.3s ease;
+}
+
+.CircleIndicator.active {
+  background-color: $blue-primary-color;
+}
+

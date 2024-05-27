@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'mixins';
+
+.catalog {
+    &Title {
+        @include h2-title;
+
+        margin-bottom: 25px;
+        margin-top: 60px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &Desc {
+        margin-bottom: 13px;
+        color: $grey-primary-color;
+        font-family: $font-proxima-nova-light;
+        font-size: 18px;
+        text-align: center 
+    }
+
+    &Category {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        &Item {
+            position: relative;
+            margin: 0 20px;
+            cursor: pointer;
+
+            color: $black-color;
+            font-family: $font-alegreya;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 900;
+            letter-spacing: 1px;
+            line-height: normal;
+            text-transform: uppercase;
+            transition: $transition;
+
+            &:hover {
+                color: $hover-color;
+            }
+
+
+
+
+        }
+    }
+
+    &Grid {
+        display: grid;
+        margin: 0, auto;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.active {
+    color: $hover-color;
+}
