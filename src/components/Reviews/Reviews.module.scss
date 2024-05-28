@@ -72,6 +72,33 @@
 }
 
 
+//media 900
+@media (max-width: 900px) {
+    .slider-container {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        width: 400px;
+    }
+
+    .review-text {
+        font-family: $font-proxima-nova-semibold;
+        font-size: 35px;
+        color: $grey-primary-color;
+        text-transform: uppercase;
+        margin-bottom: 38px;
+    }
+
+    .container {
+        width: 100%;
+        height: 500px;
+        background-color: $grey-gradient;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 
 

@@ -12,7 +12,6 @@ import Package from "@/components/Package";
 import RealLifeBanner from "@/components/StatisticBanners/RealLifeBanner";
 import Features from "@/components/StatisticBanners/Features";
 import StatisticBanners from "@/components/StatisticBanners";
-import Instructions from "@/components/DownloadManual/Instructions";
 import DownloadManual from "@/components/DownloadManual";
 import Gift from "@/components/Gift";
 import Reviews from "@/components/Reviews";
@@ -34,7 +33,7 @@ export default function Home() {
 
   return (
     <div>
-      <div>
+      {/* <div>
         <SecondHeader />
       </div>
       <div>
@@ -42,17 +41,17 @@ export default function Home() {
       </div>
       <div>
         <LongAd />
-      </div>
+      </div> */}
       <div>
         <FirstBlock />
       </div>
-      <div>
+      {/* <div>
         <ScrollAd />
       </div>
       <div>
         <Package />
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         <Accessory />
       </div>
       <div>
@@ -60,7 +59,7 @@ export default function Home() {
       </div>
       <div>
         <Banners />
-      </div>
+      </div> */}
       <div>
         <DownloadManual />
       </div>

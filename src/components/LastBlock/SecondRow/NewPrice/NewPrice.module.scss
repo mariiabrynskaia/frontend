@@ -16,3 +16,25 @@
     text-align: left;
     font-size: 35px;
 }
+
+
+//media 900
+@media (max-width: 900px) {
+    .TextCrossed {
+        color: $grey-primary-color;
+        font-family: $font-proxima-nova-regular;
+        text-align: left;
+        text-decoration: line-through;
+        font-size: 14px;
+        margin-left: 7px;
+    
+    }
+    
+    .Text {
+        color: $grey-primary-color;
+        font-family: $font-proxima-nova-semibold;
+        text-align: left;
+        font-size: 25px;
+        margin-left: 7px;
+    }
+}

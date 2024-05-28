@@ -126,3 +126,145 @@
         color: $hover-color;
     }
 }
+
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .header {
+        position: sticky;
+        z-index: 10;
+        top: 1px;
+        padding: 14px 0 36px;
+        height: 48px;
+    
+        background: $grey-primary-color;
+    }
+    
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cart {
+        display: flex;
+        cursor: pointer;
+        margin-right: 24px;
+    
+        &WrapImage {
+            position: relative;
+            right: -40px;
+            width: 20px;
+            height: 20px;
+            margin-top: 3px;
+            transition: fill $transition;
+    
+            &:hover {
+                fill: $hover-color;
+            }
+        }
+    
+        &Icon {
+            position: relative;
+    
+    
+            &Badge {
+                position: absolute;
+                top: 3px;
+                right: -45px;
+                width: 9px;
+                height: 9px;
+                border-radius: 50%;
+                background: $hover-color;
+                color: $white-color;
+                font-family: $font-proxima-nova-light;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 11px;
+                text-align: center
+            }
+        }
+    
+        &Text {
+            display: flex;
+            flex-direction: column;
+    
+            &Title {
+                color: $black-color;
+                font-family: $font-proxima-nova-light;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: normal;
+                text-transform: uppercase;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            &Count {
+                @include desc-text;
+                height: 18px;
+            }
+        }
+    }
+    
+    .media {
+        display: flex;
+        cursor: pointer;
+        margin-left: 48px;
+        margin-right: 24px;
+        margin-top: 3px;
+    
+        &WrapImage {
+            position: relative;
+            width: 15px;
+            height: 15px;
+            transition: fill $transition;
+        }
+    
+        &Wrap {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        &:hover {
+            .mediaWrapImage {
+                fill: $blue-primary-color;
+            }
+        }
+    
+        &Time {
+            @include desc-text;
+        }
+    }
+    
+    .phone {
+        display: flex;
+        cursor: pointer;
+        color: $white-color;
+        font-family: $font-proxima-nova-light;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: normal;
+        text-transform: uppercase;
+        transition: color $transition;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+    
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}

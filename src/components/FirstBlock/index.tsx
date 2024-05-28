@@ -1,14 +1,40 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import PricePic from './PricePic';
 import SecondRow from './SecondRow';
 import Buttons from './Buttons';
-import ScrollScooter from './ScrollScooter';
 import styles from './FirstBlock.module.scss';
 import Link from 'next/link';
+import ScrollScooter from './ScrollScooter';
 
 export default function FirstBlock() {
+    const [showScrollScooter, setShowScrollScooter] = useState(true);
+    const [width, setWidth] = useState<number>(494);
+    const [height, setHeight] = useState<number>(46);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 900) {
+                setShowScrollScooter(false);
+                setWidth(164);
+                setHeight(50);
+            } else {
+                setShowScrollScooter(true);
+                setWidth(400);
+                setHeight(46);
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     return (
         <div className={styles.fullcontainer}>
             <div className={styles.container}>
@@ -34,13 +60,20 @@ export default function FirstBlock() {
                         </div>
                     </div>
                 </div>
-                <div className={styles.paymentImage}>
+                <div className={styles.fullcontainerPaymentImage}>
                     <Link href="/payment">
-                        <Image src="/assets/images/payment_methods.png" alt="Payment Methods" width={494} height={46} className={styles.pointer} />
+                        <Image
+                        src="/assets/images/payment_methods.png"
+                        alt="Payment Methods"
+                        width={width}
+                        height={height}
+                        layout="responsive"
+                        className={styles.pointer}
+                        />
                     </Link>
                 </div>
             </div>
-            <ScrollScooter />;
+            {showScrollScooter && <ScrollScooter />}
         </div>
     );
 }

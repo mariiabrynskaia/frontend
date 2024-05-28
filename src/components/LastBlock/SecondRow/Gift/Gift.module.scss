@@ -7,3 +7,14 @@
     text-align: left;
     font-size: 18px;
 }
+
+
+//media 900
+@media (max-width: 900px) {
+    .Text {
+        color: $blue-primary-color;
+        font-family: $font-proxima-nova-semibold;
+        text-align: left;
+        font-size: 14px;
+    }
+}

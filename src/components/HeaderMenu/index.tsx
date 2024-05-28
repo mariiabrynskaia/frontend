@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 import styles from './HeaderMenu.module.scss';
 

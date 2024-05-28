@@ -42,3 +42,72 @@
   background-color: $blue-primary-color;
 }
 
+.Title {
+    font-family: $font-proxima-nova-semibold;
+    font-size: 50px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 94px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.Subtitle {
+    font-family: $font-proxima-nova-regular;
+    font-size: 18px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 74px;
+}
+
+.allignTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .ComparisonContainer {
+        position: relative;
+        overflow: hidden;
+        width: 520px;
+        margin: 0 auto;
+    }
+
+    .Title {
+        font-family: $font-proxima-nova-semibold;
+        font-size: 30px;
+        color: $grey-primary-color;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin-top: 44px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+    }
+
+    .Subtitle {
+        font-family: $font-proxima-nova-regular;
+        font-size: 14px;
+        color: $grey-primary-color;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+    
+}

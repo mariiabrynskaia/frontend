@@ -44,3 +44,54 @@
         margin-right: 20px;
     }
 }
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .Title {
+        font-family: 'proxima-nova-semibold';
+        font-size: 20px;
+        color: $grey-primary-color;
+        text-align: left;
+        text-transform: uppercase; 
+        font-weight: bold; 
+    }
+    
+    .Text {
+        font-family: 'proxima-nova-light';
+        font-size: 12px;
+        color: $grey-primary-color;
+        text-align: left;
+    }
+    
+    .TextContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 10px 0;
+    
+        .Title {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        border: 5px solid $blue-primary-color;
+        padding: 40px;
+        width: 500px;
+        height: 200px;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 90px;
+        
+        .image {
+            width: 200px;
+            height: 144px;
+            margin-right: 20px;
+        }
+    }
+}

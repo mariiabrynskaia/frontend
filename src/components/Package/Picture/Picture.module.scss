@@ -27,3 +27,36 @@
   position: relative;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+  .pictureContainer {
+    width: 200px;
+    height: 186px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+  }
+  
+  .circle {
+    width: 220px;
+    height: 220px;
+    background-color: $blue-primary-color;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .picture {
+    width: 200px;
+    height: 186px;
+    overflow: hidden;
+    border-radius: 5%;
+    transform: rotate(5.5deg);
+    position: relative;  
+  }
+}

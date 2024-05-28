@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import HeaderMenu from '../HeaderMenu';
 import styles from './Header.module.scss';
+import Link from 'next/link';
 
 function Header() {
     return (
@@ -23,15 +24,13 @@ function Header() {
                     <div className={styles.mediaIcon}>
                         <div className={styles.mediaWrapImage}>
                             <Image fill src="/assets/icons/media.svg" alt="media" />
-                        </div>
+                        </div>                        
                         <div className={styles.cartIconBadge}>0</div>
                     </div>
                 </div>
 
                 <div className={styles.phone}>
-                    <div className={styles.phoneWrap}>
-                        <div className={styles.phoneText}>+1 (888) 888-88-88</div>
-                    </div>
+                    <a href="/authpage" className={`${styles.phone}`}>Войти</a>
                 </div>
             </div>
         </header>

@@ -24,3 +24,37 @@
     justify-content: left;
     align-items: left;
 }
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .container {
+        max-width: 1200px;
+        // margin: 0 46px;
+        padding: 0 20px;
+        margin-top: 100px;
+        margin-right: -200px;
+        margin-left: 130px;
+
+    }
+    
+    .Text {
+        text-transform: uppercase;
+        color: $grey-primary-color;
+        font-family: $font-proxima-nova-semibold;
+        font-size: 30px;
+        line-height: 60px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+    
+    .Picture {
+        width: 488px;
+        height: 278px;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+}

@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import styles from './ScrollAd.module.scss';
+import Image from 'next/image';
 
 const slides = ['box.png', 'list.png', 'instruments.png', 'route_charge.png'];
 
@@ -14,7 +14,24 @@ const indicators = [
 ];
 
 export default function ScrollAd() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
+  const [width2, setWidth2] = useState<number>(800);
+  const [height2, setHeight2] = useState<number>(50);
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      setWidth2(window.innerWidth > 900 ? 957 : 550);
+      setHeight2(window.innerWidth > 900 ? 192 : 110);
+    };
+
+    updateDimensions();
+
+    window.addEventListener('resize', updateDimensions);
+
+    return () => {
+      window.removeEventListener('resize', updateDimensions);
+    };
+  }, []);
 
   const handleSlideChange = (index: number) => {
     setActiveSlide(index);
@@ -39,13 +56,10 @@ export default function ScrollAd() {
       <div className={styles.slideContainer}>
         {slides.map((slide, index) => (
           <div key={index} className={`${styles.slide} ${activeSlide === index ? styles.active : ''}`}>
-            <Image src={`/assets/images/${slide}`} alt={slide} width={957} height={192} />
+            <Image src={'/assets/images/${slide}'} alt={slide} width={width2} height={height2} />
           </div>
         ))}
       </div>
     </div>
   );
 }
-
-
-

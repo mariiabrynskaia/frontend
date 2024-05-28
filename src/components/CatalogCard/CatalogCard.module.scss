@@ -37,3 +37,46 @@
         transition: color $transition;
     }
 }
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .card {
+        position: relative;
+        width: 100px;
+        height: 112px;
+        background: $grey-primary-color;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        transition: color $transition;
+    
+        &:hover {
+            background: $blue-primary-color;
+            .cardName {
+                color: $white-color;
+            }
+        }
+    
+        &Image {
+            position: relative;
+            width: 60px;
+            height: 66px;
+            margin-bottom: 15px;
+        }
+    
+        &Name {
+            color: $grey-secondary-color;
+            font-family: $font-proxima-nova-semibold;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 100;
+            letter-spacing: 1px;
+            line-height: normal;
+            text-align: center;
+            transition: color $transition;
+        }
+    }
+}

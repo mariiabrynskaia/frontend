@@ -27,4 +27,38 @@
     font-family: $font-proxima-nova-light;
     line-height: normal;
     text-align: center;
+}
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+  .cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid $grey-primary-color;
+    margin: 0 10px;
+    padding: 10px;
+  }
+  
+  .card p {
+    color: $grey-primary-color;
+    font-size: 12px;
+    font-family: $font-proxima-nova-light;
+    line-height: normal;
+    text-align: center;
+  }
+}

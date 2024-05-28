@@ -14,26 +14,32 @@ const Comparison = () => {
   };
 
   return (
-    <div className={styles.ComparisonContainer}>
-      <div
-        className={styles.CardContainer}
-        style={{ transform: `translateX(-${activeIndex * (188 + 60)}px)` }}
-      >
-        {scooterIds.map((id) => (
-          <ComparisonCardOne key={id} id={id} />
-        ))}
-      </div>
-      <div className={styles.CircleIndicatorContainer}>
-        {scooterIds.slice(0, 6).map((_, index) => (
-          <div
-            key={index}
-            className={`${styles.CircleIndicator} ${
-              index === activeIndex ? styles.active : ''
-            }`}
-            onClick={() => handleIndicatorClick(index)}
-          />
-        ))}
-      </div>
+    <div>
+        <div className={styles.allignTitle}>
+            <div className={styles.Title}>Compare Specifications</div>
+            <div className={styles.Subtitle}>Add model to compare</div>
+        </div>
+        <div className={styles.ComparisonContainer}>
+        <div
+            className={styles.CardContainer}
+            style={{ transform: `translateX(-${activeIndex * (188 + 60)}px)` }}
+        >
+            {scooterIds.map((id) => (
+            <ComparisonCardOne key={id} id={id} />
+            ))}
+        </div>
+        <div className={styles.CircleIndicatorContainer}>
+            {scooterIds.slice(0, 6).map((_, index) => (
+            <div
+                key={index}
+                className={`${styles.CircleIndicator} ${
+                index === activeIndex ? styles.active : ''
+                }`}
+                onClick={() => handleIndicatorClick(index)}
+            />
+            ))}
+        </div>
+        </div>
     </div>
   );
 };

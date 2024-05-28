@@ -1,0 +1,61 @@
+@import 'variables';
+
+.Text {
+    font-family: $font-proxima-nova-semibold;
+    font-size: 40px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 24px;
+}
+
+.interBox {
+    font-family: $font-proxima-nova-light;
+    font-size: 20px;
+    color: $grey-primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    width: 256px;
+    border: 3px solid $grey-primary-color;
+    margin: 0 auto;
+    margin-bottom: 1px;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 40px;
+    text-align: center;
+    background-color: $blue-primary-color;
+    color: $white-color;
+    font-family: $font-proxima-nova-regular;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background-color $transition;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    &:hover {
+        background-color: darken($blue-primary-color, 10%);
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+    background-color: $white-color;
+    height: 100vh;
+    justify-content: flex-start;
+}

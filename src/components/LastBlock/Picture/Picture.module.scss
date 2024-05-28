@@ -4,3 +4,15 @@
     margin-bottom: 0;
     margin-left: -160px;
 }
+
+
+//media 900
+@media (max-width: 900px) {
+    .picture {
+        width: 275px;
+        height: 75px;
+        margin-bottom: 0;
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+}

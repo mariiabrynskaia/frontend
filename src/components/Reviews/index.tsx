@@ -8,12 +8,27 @@ const Reviews = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const totalSlides = 5;
     const visibleSlides = 3;
+    const [width, setWidth] = useState<number>(275);
+    const [height, setHeight] = useState<number>(487);
 
     useEffect(() => {
+        const updateDimensions = () => {
+            setWidth(window.innerWidth > 900 ? 275 : 184);
+            setHeight(window.innerWidth > 900 ? 487 : 324);
+        };
+
+        updateDimensions();
+
         const interval = setInterval(() => {
             setActiveIndex((prevIndex) => (prevIndex + 1) % (totalSlides - visibleSlides + 1));
         }, 3000);
-        return () => clearInterval(interval);
+        
+        window.addEventListener('resize', updateDimensions);
+
+        return () => {
+            clearInterval(interval);
+            window.removeEventListener('resize', updateDimensions);
+        };
     }, [totalSlides, visibleSlides]);
 
     const handleIndicatorClick = (index: number) => {
@@ -22,15 +37,15 @@ const Reviews = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.Text}>REVIEW</div>
+            <div className={styles.Text}>REVIEWS</div>
             <div className={styles['slider-container']}>
                 <div
                     className={styles.slides}
-                    style={{ transform: `translateX(-${activeIndex * (275 + 18)}px)` }}
+                    style={{ transform: `translateX(-${activeIndex * (width + 18)}px)` }}
                 >
                     {[...Array(totalSlides)].map((_, index) => (
                         <div className={styles.slide} key={index}>
-                            <Image src="/assets/images/review.png" alt="Review" width={275} height={487} />
+                            <Image src="/assets/images/review.png" alt="Review" width={width} height={height} />
                         </div>
                     ))}
                 </div>
@@ -49,6 +64,7 @@ const Reviews = () => {
 };
 
 export default Reviews;
+
 
 
 

@@ -136,3 +136,46 @@
     gap: 15px;
     margin-bottom: 55px;;
 }
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .containerFullCategory {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        text-align: left;
+        gap: 2px;
+    }
+
+    .allignAll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .PriceButtonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+        margin-bottom: 55px;;
+    }
+    
+    .Picture {
+        height: 182px;
+        width: 168px;
+        margin-bottom: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

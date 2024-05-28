@@ -52,7 +52,7 @@ const ScrollScooter = () => {
         <div className={styles.container}>
             <div className={styles.slider} style={{ transform: `translateX(-${currentSlide * 432}px)` }}>
                 {scooters.map((scooter, index) => (
-                    <div className={styles.slide} key={scooter.id}>
+                    <div className={styles.containerSlide} key={scooter.id}>
                         <Image src={`/assets/images/scooters_pic/${scooter.image}`} alt="Scooter" width={530} height={650} />
                     </div>
                 ))}

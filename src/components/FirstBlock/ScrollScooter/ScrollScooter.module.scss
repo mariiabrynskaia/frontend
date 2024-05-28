@@ -41,3 +41,57 @@
 .active {
     background-color: $blue-primary-color;
 }
+
+
+
+
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .container {
+        position: relative;
+        width: 200px;;
+        height: 350px;
+        margin-top: 350px;
+        overflow: hidden;
+
+        &Slide {
+            flex: 0 0 200px;
+            width: 200px;
+            height: 350px;
+        }
+    }
+    
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .indicators {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    
+    .indicator {
+        width: 10px; 
+        height: 10px;
+        border-radius: 50%;
+        margin: 0 15px;
+        background-color: $grey-secondary-color;
+    }
+    
+    .active {
+        background-color: $blue-primary-color;
+    }
+    
+}

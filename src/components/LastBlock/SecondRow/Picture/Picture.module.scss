@@ -6,3 +6,14 @@
     width: 120px;
     height: 87px;
 }
+
+
+
+//media 900
+@media (max-width: 900px) {
+    .picture {
+        position: relative;
+        width: 110px;
+        height: 77px;
+    }
+}
