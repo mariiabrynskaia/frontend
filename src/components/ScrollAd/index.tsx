@@ -56,9 +56,9 @@ export default function ScrollAd() {
       <div className={styles.slideContainer}>
         {slides.map((slide, index) => (
           <div key={index} className={`${styles.slide} ${activeSlide === index ? styles.active : ''}`}>
-            <Image src={'/assets/images/${slide}'} alt={slide} width={width2} height={height2} />
+            <Image src={`/assets/images/${slide}`} alt={slide} width={width2} height={height2} />
           </div>
-        ))}
+           ))}
       </div>
     </div>
   );

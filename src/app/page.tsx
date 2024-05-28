@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* <div>
+      <div>
         <SecondHeader />
       </div>
       <div>
@@ -41,17 +41,17 @@ export default function Home() {
       </div>
       <div>
         <LongAd />
-      </div> */}
+      </div>
       <div>
         <FirstBlock />
       </div>
-      {/* <div>
+      <div>
         <ScrollAd />
       </div>
       <div>
         <Package />
-      </div> */}
-      {/* <div>
+      </div>
+      <div>
         <Accessory />
       </div>
       <div>
@@ -59,7 +59,7 @@ export default function Home() {
       </div>
       <div>
         <Banners />
-      </div> */}
+      </div>
       <div>
         <DownloadManual />
       </div>
